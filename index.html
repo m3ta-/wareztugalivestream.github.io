@@ -10,18 +10,20 @@
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/docs.min.css" rel="stylesheet">
 		<link rel="stylesheet" href="css/font-awesome.css">
+		<link rel="stylesheet" href="http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+		<link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
 		<style>
 			.bar {
 				position: relative;
 				left: 0px;
 				top: 0px;
 				width: 100%;
+				height: 70px;
 				background-color: #F5F5F5;
 			}
 			
 		</style>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function() {
 				$('a').click(function(e){
@@ -93,7 +95,9 @@
 		</main>
 		<div class="bar">
 			<center>
-				<br /><br /><br />
+				<div class="fb-like" data-href="https://facebook.com/WareztugaLiveStream" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+				<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+				<g:plusone></g:plusone>
 			</center>
 		</div>
 		
@@ -153,7 +157,30 @@
 				<h2 class="bs-docs-featurette-title">Capturas de ecrã <a href="#top" class="fa fa-angle-up"></a></h2>
 				<p class="lead">Vê por ti próprio</p>
 				<hr class="half-rule"></hr>
-				
+				<a href="img/screenshots/phone/1.jpg" title="Séries" data-gallery>
+					<img src="img/screenshots/phone/thumbnails/1.jpg" alt="Séries">
+				</a>
+				<a href="img/screenshots/phone/2.jpg" title="Menu lateral" data-gallery>
+					<img src="img/screenshots/phone/thumbnails/2.jpg" alt="Menu lateral">
+				</a>
+				<a href="img/screenshots/phone/3.jpg" title="Filmes" data-gallery>
+					<img src="img/screenshots/phone/thumbnails/3.jpg" alt="Filmes">
+				</a>
+				<a href="img/screenshots/phone/4.jpg" title="Resultados de pesquisa" data-gallery>
+					<img src="img/screenshots/phone/thumbnails/4.jpg" alt="Resultados de pesquisa">
+				</a>
+				<a href="img/screenshots/phone/5.jpg" title="Série" data-gallery>
+					<img src="img/screenshots/phone/thumbnails/5.jpg" alt="Série">
+				</a>
+				<a href="img/screenshots/phone/6.jpg" title="Episódios e comentários da série" data-gallery>
+					<img src="img/screenshots/phone/thumbnails/6.jpg" alt="Episódios e comentários da série">
+				</a>
+				<a href="img/screenshots/phone/7.jpg" title="Filme" data-gallery>
+					<img src="img/screenshots/phone/thumbnails/7.jpg" alt="Série">
+				</a>
+				<a href="img/screenshots/phone/8.jpg" title="Episódios e comentários do filme" data-gallery>
+					<img src="img/screenshots/phone/thumbnails/8.jpg" alt="Episódios e comentários da série">
+				</a>
 			</div>
 		</div>
 		<div id="comments" class="bs-docs-featurette">
@@ -252,5 +279,43 @@
 				</div>
 			</div>
 		</div>
+		
+		<div id="blueimp-gallery" class="blueimp-gallery">
+    <!-- The container for the modal slides -->
+    <div class="slides"></div>
+    <!-- Controls for the borderless lightbox -->
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+    <!-- The modal dialog, which will be used to wrap the lightbox content -->
+    <div class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body next"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left prev">
+                        <i class="glyphicon glyphicon-chevron-left"></i>
+                        Previous
+                    </button>
+                    <button type="button" class="btn btn-primary next">
+                        Next
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		<script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+		<script src="js/bootstrap-image-gallery.min.js"></script>
 	</body>
 </html>
