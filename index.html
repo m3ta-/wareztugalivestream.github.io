@@ -2,7 +2,11 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
+		<meta name="description" content="Wareztuga Live Stream, watch movies, series and animes on your android or tv">
+		<meta name="keywords" content="wareztuga, live, stream, android, movies, series, animes, apk, app">
+		<meta name="author" content="Ricardo Pontes">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Wareztuga Live Stream</title>
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/docs.min.css" rel="stylesheet">
 		<link rel="stylesheet" href="css/font-awesome.css">
@@ -34,6 +38,15 @@
 		</script>
 	</head>
 	<body>
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+			fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script>
 		<header class="navbar navbar-static-top bs-docs-nav" id="top" role="banner">
 			<div class="container">
 				<div class="navbar-header">
@@ -49,6 +62,9 @@
 					<ul class="nav navbar-nav navbar-right">
 						<li>
 							<a href="#features">Funcionalidades</a>
+						</li>
+						<li>
+							<a href="#screenshots">Capturas de ecrã</a>
 						</li>
 						<li>
 							<a data-toggle="modal" data-target="#changelog" href="#changelog">Novidades</a>
@@ -132,12 +148,20 @@
 				</div>
 			</div>
 		</div>
+		<div id="screenshots" class="bs-docs-featurette">
+			<div class="container">
+				<h2 class="bs-docs-featurette-title">Capturas de ecrã <a href="#top" class="fa fa-angle-up"></a></h2>
+				<p class="lead">Vê por ti próprio</p>
+				<hr class="half-rule"></hr>
+				
+			</div>
+		</div>
 		<div id="comments" class="bs-docs-featurette">
 			<div class="container">
 				<h2 class="bs-docs-featurette-title">Comentários <a href="#top" class="fa fa-angle-up"></a></h2>
 				<p class="lead">Diz o que pensas desta aplicação</p>
 				<hr class="half-rule"></hr>
-				
+				<div class="fb-comments" data-href="http://wareztugalivestream.github.io/" data-numposts="5" data-colorscheme="light"></div>
 			</div>
 		</div>
 		
